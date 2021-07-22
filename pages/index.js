@@ -15,13 +15,15 @@ import Link from 'next/link'
           Filmes em destaque
         </h1>
 
+        <Link href="/busca">Ir para busca</Link>
+
         <ul>
           {props.list.map(item=>(
             <li>
               <a href={`movie/${item.id}`}>
                 <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" alt="" /> <br/>
                 <p>{item.title}</p>
-              </a> 
+              </a>
             </li>
           ))}
         </ul>
