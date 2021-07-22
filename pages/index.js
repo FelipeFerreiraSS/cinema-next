@@ -28,6 +28,7 @@ import Link from 'next/link'
           ))}
         </ul>
 
+        <Link href="/sobre">Sobre o projeto</Link>
       </main>
     </div>
   )
