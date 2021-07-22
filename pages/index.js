@@ -36,11 +36,11 @@ import Link from 'next/link'
 
 export async function getServerSideProps() {
   const res = await fetch('http://localhost:3000/api/trending')
-  const json = await res.json()
+  .then(res => res.json())
 
   return {
     props: {
-      list: json.list
+      list: res.list
     }
   }
 }
